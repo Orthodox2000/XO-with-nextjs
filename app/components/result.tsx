@@ -1,11 +1,10 @@
-let match:any=["0","1","2","3","4","5","6","7","8"];
-let winner="";
+const match:any=["0","1","2","3","4","5","6","7","8"];
+let winner:string="";
 export function updateres(scorer:string,key:number)
 {
     if(scorer=="usero"|| scorer=="userx")
-    match[key]=scorer; 
-    console.log(match);
-    const patterns = [
+    match[key]=scorer;  
+    const patterns :any= [
     [0,3,6], // top row
     [1,4,7], // middle row
     [2,5,8], // bottom row
