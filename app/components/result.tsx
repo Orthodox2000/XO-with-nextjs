@@ -1,5 +1,5 @@
-var match:any=["0","1","2","3","4","5","6","7","8"];
-var winner="";
+let match:any=["0","1","2","3","4","5","6","7","8"];
+let winner="";
 export function updateres(scorer:string,key:number)
 {
     if(scorer=="usero"|| scorer=="userx")

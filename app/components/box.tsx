@@ -10,7 +10,7 @@ interface boxprop {
     unique_key:number;
     scorer:string;
 }
-var user=false;
+let user=false;
 let resultflag=false; 
 const box : React.FC<boxprop>=({unique_key,scorer})=>
 {  
@@ -34,7 +34,7 @@ const update_s=()=>
         }
         
     } 
-    let resultant:any=updateres(scorer,unique_key);
+    const resultant:any=updateres(scorer,unique_key);
     if (resultant)
     {
         resultflag=true; 

@@ -3,7 +3,7 @@ import Box from './box';
 
 export default function playarea()
 { 
-    var boxset=[];
+    let boxset=[];
    for(let i=0;i<9;i++)
    {
     boxset.push(
