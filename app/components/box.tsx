@@ -33,13 +33,12 @@ const update_s=()=>
             scorer="usero"; 
         }
         
+        
     } 
     const resultant:any=updateres(scorer,unique_key);
     if (resultant)
     {
-        resultflag=true; 
-        console.log(resultant);
-
+        resultflag=true;  
     }
 }
     

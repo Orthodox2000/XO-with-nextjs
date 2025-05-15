@@ -27,8 +27,15 @@ export function updateres(scorer:string,key:number)
       return temp;
     }
   }
+  let draw=false;
+ for(let i =0;i<9;i++)
+ {if(match[i]=="userx"||match[i]=="usero")
+  continue;
+  else return null;
 
-  return null; // no winner
+ } 
+ winner="draw";
+  return winner; // no winner
 
 }
 export default function win()
@@ -45,6 +52,13 @@ export default function win()
          return(<div className="absolute bottom-1/2 left-[-1/2] translate-x-[-1/2] translate-y-1/2
         bg-blue-900 border-double p-4 text-6xl border-2 text-white max-md:text-4xl">
             WINNER IS USER-O !
+        </div>)
+    }
+    else if(winner=="draw")
+    {
+         return(<div className="absolute bottom-1/2 left-[-1/2] translate-x-[-1/2] translate-y-1/2
+        bg-white border-double p-4 text-6xl border-2 text-black max-md:text-4xl">
+            IT'S A DRAW !
         </div>)
     }
 }
