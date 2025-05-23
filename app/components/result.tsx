@@ -1,3 +1,4 @@
+'use client'
 const match:any=["0","1","2","3","4","5","6","7","8"];
 let winner:string="";
 export function updateres(scorer:string,key:number)

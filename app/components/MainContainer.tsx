@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 import Playarea from "./playarea" ;
 import Win from "./result";

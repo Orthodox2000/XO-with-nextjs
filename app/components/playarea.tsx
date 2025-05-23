@@ -1,5 +1,5 @@
+'use client'
 import Box from './box';
-
 
 export default function playarea()
 { 
