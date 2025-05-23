@@ -62,3 +62,8 @@ export default function win()
         </div>)
     }
 }
+
+export function botmove()
+{
+  return 1;
+}

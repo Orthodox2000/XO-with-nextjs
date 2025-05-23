@@ -1,11 +1,10 @@
-"use client"
+
 import { useState } from "react";   
 import Image from 'next/image'
 import baseimg from "../../public/m.png";
 import ximage from "../../public/cross.png";
 import oimage from "../../public/o.png"; 
-import {updateres} from "./result"
- 
+import {updateres} from "./result" 
 interface boxprop {
     unique_key:number;
     scorer:string;
@@ -35,11 +34,14 @@ const update_s=()=>
         
         
     } 
+    
+
     const resultant:any=updateres(scorer,unique_key);
     if (resultant)
     {
         resultflag=true;  
-    }
+    } 
+    
 }
     
     return (
