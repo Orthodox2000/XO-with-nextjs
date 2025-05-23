@@ -14,6 +14,10 @@ export default function Home() {
       XO GAME 
        <button className="mt-5 w-1/10 border-1 text-xl max-md:w-1/5 rounded-lg hover:bg-white hover:text-black" 
        onClick={refresh}>RESET</button></div>
+       <noscript>
+        <p>Your JavaScript is disabled. It's not my fault app isnt working. Enable please enable JS.
+        </p>
+      </noscript>
       <MainContainer/>
      
     </div>
